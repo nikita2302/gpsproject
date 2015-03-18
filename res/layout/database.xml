@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/submit"
+        android:layout_marginBottom="20dp"
+        android:layout_toRightOf="@+id/textView4" >
+
+        <RelativeLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="620dp" >
+
+            <EditText
+                android:id="@+id/ph_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="33dp"
+                android:hint="enter taxidriver ph no"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/ph_no"
+                android:layout_marginBottom="14dp"
+                android:text="Taxidriver ph no" />
+
+            <EditText
+                android:id="@+id/tname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/ph_no"
+                android:layout_below="@+id/ph_no"
+                android:hint="enter taxidriver name"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignTop="@+id/tname"
+                android:layout_marginTop="14dp"
+                android:text="Taxidriver name" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/tname"
+                android:layout_marginTop="16dp"
+                android:text="Taxi no." />
+
+            <EditText
+                android:id="@+id/tno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tname"
+                android:layout_below="@+id/tname"
+                android:hint="enter taxi number"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/tno"
+                android:layout_marginTop="18dp"
+                android:text="Startlocation" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/textView4"
+                android:layout_marginTop="38dp"
+                android:text="Endlocation" />
+
+            <EditText
+                android:id="@+id/sloc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tno"
+                android:layout_below="@+id/tno"
+                android:hint="enter start location"
+                android:textSize="15dp" >
+
+                <requestFocus />
+            </EditText>
+
+            <EditText
+                android:id="@+id/dloc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/sloc"
+                android:layout_below="@+id/sloc"
+                android:hint="enter destination loc"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/dloc"
+                android:layout_marginTop="23dp"
+                android:text="Customer name" />
+
+            <EditText
+                android:id="@+id/cname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/dloc"
+                android:layout_below="@+id/dloc"
+                android:hint="enter customer name"
+                android:textSize="15dp" />
+
+            <EditText
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/cname"
+                android:layout_below="@+id/cname"
+                android:hint="enter date"
+                android:inputType="date"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignTop="@+id/date"
+                android:layout_marginTop="14dp"
+                android:text="Date" />
+
+            <ImageButton
+                android:id="@+id/submit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/date"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="29dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/submittt" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/date"
+                android:layout_marginTop="18dp"
+                android:text="distance" />
+
+            <EditText
+                android:id="@+id/diste"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/date"
+                android:layout_below="@+id/date"
+                android:hint="distance"
+               />
+
+            <EditText
+                android:id="@+id/ccost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/diste"
+                android:layout_below="@+id/diste"
+                android:hint="cost" />
+
+            <EditText
+                android:id="@+id/feedb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ccost"
+                android:layout_marginTop="10dp"
+                android:layout_toLeftOf="@+id/ccost"
+                android:hint="feedback" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/ccost"
+                android:layout_alignRight="@+id/textView3"
+                android:layout_marginBottom="14dp"
+                android:text="cost" />
+<TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+          android:layout_alignParentLeft="true"
+                android:layout_below="@+id/ccost"
+                android:layout_marginTop="18dp"
+        android:text="feedback" />
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+    
+
+</RelativeLayout>

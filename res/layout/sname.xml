@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background" >
+
+    <EditText
+        android:id="@+id/customname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="171dp"
+        android:hint="enter customer name" />
+
+    <ImageButton
+        android:id="@+id/prd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/customname"
+        android:layout_marginLeft="47dp"
+        android:layout_marginTop="80dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/p" />
+
+    <ImageButton
+        android:id="@+id/bck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/prd"
+        android:layout_marginRight="48dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/back" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/prd"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/bck"
+        android:layout_marginTop="47dp"
+        android:text="Enter the name of customer whose data to be found" />
+
+</RelativeLayout>

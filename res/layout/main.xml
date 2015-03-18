@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background" >
+
+    <ImageButton
+        android:id="@+id/btngps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="25dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/gpssss" />
+
+    
+ <SlidingDrawer 
+     android:id="@+id/slider" 
+     android:layout_width="fill_parent" 
+     android:layout_height="fill_parent" 
+     android:content="@+id/sliderContent" 
+     android:handle="@+id/btnHandle"
+     android:minHeight="300dp"
+         
+     >
+  <ImageButton 
+      android:id="@id/btnHandle" 
+      android:layout_width="wrap_content" 
+      android:layout_height="wrap_content" 
+       android:src="@drawable/handlee" 
+        android:background="@android:color/transparent" /> 
+ <LinearLayout 
+     android:id="@id/sliderContent" 
+     android:layout_width="fill_parent" 
+     android:layout_height="wrap_content"
+     >
+     <com.google.android.maps.MapView
+        android:id="@+id/mapview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:apiKey="0EK2IlvvPMPdoPdw1eRWOTAAsh4amP9y26VA8Kw"
+        android:clickable="true" />
+  </LinearLayout>
+  </SlidingDrawer>
+    
+
+    <ImageButton
+        android:id="@+id/search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/btngps"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/transparent"
+        android:src="@drawable/seache" />
+
+    <ImageButton
+        android:id="@+id/start_loc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/search"
+        android:layout_marginRight="31dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/startttttt" />
+
+    <ImageButton
+        android:id="@+id/cost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/start_loc"
+        android:layout_below="@+id/start_loc"
+        android:layout_marginTop="66dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ccost" />
+
+    <ImageButton
+        android:id="@+id/distance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="135dp"
+         android:layout_marginTop="140dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/dist" />
+
+    <ImageButton
+        android:id="@+id/des_loc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="28dp"
+         android:layout_marginTop="140dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/destina" />
+
+"
+
+</RelativeLayout>

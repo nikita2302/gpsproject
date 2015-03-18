@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background" >
+
+    <ImageButton
+        android:id="@+id/proceed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="138dp"
+        android:layout_marginLeft="57dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/p" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21dp"
+        android:text="Date for which data needs to be searched" />
+
+    <ImageButton
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/proceed"
+        android:layout_alignRight="@+id/textView1"
+        android:background="@android:color/transparent"
+        android:src="@drawable/back" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/back"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_marginBottom="58dp" >
+
+        <RadioButton
+            android:id="@+id/radiorecord"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/radiodistance"
+            android:layout_alignLeft="@+id/radiodistance"
+            android:layout_marginBottom="20dp"
+            android:checked="true"
+            android:text="customer record on this date" />
+
+        <RadioButton
+            android:id="@+id/radiodistance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="total distance on this date" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="29dp"
+        android:hint="enter date"
+        android:inputType="date" />
+
+</RelativeLayout>

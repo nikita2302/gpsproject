@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background" >
+
+    <EditText
+        android:id="@+id/fcost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="22dp"
+        android:layout_marginTop="25dp"
+        android:hint="cost for first km"
+        android:textSize="15dp" />
+
+    <EditText
+        android:id="@+id/ncost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/fcost"
+        android:layout_below="@+id/fcost"
+        android:layout_marginTop="53dp"
+        android:hint="cost for next km"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/ncost"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="82dp"
+        android:text="Total Cost" />
+
+    <EditText
+        android:id="@+id/tcost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/fcost"
+        android:layout_below="@+id/ncost"
+        android:layout_marginTop="68dp"
+        android:textSize="15dp" 
+        android:hint="Total cost">
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/fcost"
+        android:layout_marginBottom="15dp"
+        android:text="Cost for First kilometre" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/ncost"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="14dp"
+        android:text="Cost for next kilometre" />
+
+    <ImageButton
+        android:id="@+id/cost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tcost"
+        android:layout_below="@+id/tcost"
+        android:layout_marginTop="62dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/tc"/>
+
+</RelativeLayout>
